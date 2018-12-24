@@ -17,6 +17,5 @@ recode
 rtorrent
 setroubleshoot-server
 usbutils
-vim-enhanced
 whois
 
