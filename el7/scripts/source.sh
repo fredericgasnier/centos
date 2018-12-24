@@ -16,6 +16,10 @@ CWD=$(pwd)
 # Interrompre en cas d'erreur
 set -e
 
+# Téléchargement
+NUX="http://li.nux.ro/download/nux/dextop/el7/x86_64"
+ELREPO="http://mirrors.ircam.fr/pub/elrepo/elrepo/el7/x86_64/RPMS/"
+
 # Couleurs
 VERT="\033[01;32m"
 GRIS="\033[00m"
