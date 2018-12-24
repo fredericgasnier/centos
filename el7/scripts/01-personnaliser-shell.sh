@@ -5,8 +5,9 @@
 # Nicolas Kovacs, 2019
 #
 # Ce script installe une invite de commande personnalisée et une série d'alias
-# pratiques pour root et les utilisateurs du système. Il ajoute également une
-# série d'options par défaut à l'éditeur Vim.
+# pratiques pour root et les utilisateurs du système. Il ajoute une série
+# d'options par défaut à l'éditeur Vim. Il passe le système en anglais pour
+# root et active le framebuffer pour la console.
 
 . source.sh
 
@@ -42,6 +43,16 @@ echo "::"
 echo -e ":: Passer le système en anglais... \c"
 sleep $DELAY
 localectl set-locale LANG=en_US.UTF8
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
+# Configuration de l'affichage de la console
+echo "::"
+echo -e ":: Configuration de l'affichage de la console... \c"
+sleep $DELAY
+sed -i -e 's/rhgb quiet/nomodeset quiet vga=791/g' /etc/default/grub
+grub2-mkconfig -o /boot/grub2/grub.cfg >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
