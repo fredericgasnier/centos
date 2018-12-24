@@ -4,6 +4,8 @@
 #
 # Nicolas Kovacs, 2019
 #
+# Ce script configure les dépôts pour Yum, avec une protection pour les paquets
+# officiels.
 
 . source.sh
 
