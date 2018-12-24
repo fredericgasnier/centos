@@ -4,10 +4,7 @@
 #
 # Nicolas Kovacs, 2019
 #
-# Ce script installe une invite de commande personnalisée et une série d'alias
-# pratiques pour root et les utilisateurs du système. Il ajoute une série
-# d'options par défaut à l'éditeur Vim. Il passe le système en anglais pour
-# root et active le framebuffer pour la console.
+# Personnalisation du shell pour root et les utilisateurs
 
 . source.sh
 
