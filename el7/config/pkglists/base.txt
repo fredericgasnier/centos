@@ -493,6 +493,7 @@ tcsh
 teamd
 time
 traceroute
+tree
 trousers
 tuned
 tzdata

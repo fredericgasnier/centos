@@ -16,6 +16,7 @@ psmisc
 recode
 rtorrent
 setroubleshoot-server
+tree
 usbutils
 whois
 
