@@ -4,7 +4,9 @@
 #
 # Nicolas Kovacs, 2019
 #
-# 
+# Ce script désactive l'IPv6 et reconfigure automatiquement les serveurs SSH et
+# Postfix pour qu'ils fonctionnent correctement en IPv4 seul. La reconstruction
+# de l'initrd évite le plantage de rpcbind au démarrage.
 
 . source.sh
 
